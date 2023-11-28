@@ -43,3 +43,9 @@ function addItem() {
     input.value = '';
   }
 }
+
+function removeAllItems() {
+  const itemList = document.querySelector('#itemList tbody');
+  itemList.innerHTML = ''; // Usunięcie wszystkich dzieci z elementu <tbody>
+  counter = 1; // Zresetowanie licznika
+}
